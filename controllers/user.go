@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"fmt"
 	"html/template"
 	"reflect"
 	"strconv"
@@ -376,11 +377,20 @@ func (this *UserController) UserForgotPwd() {
 
 // @router /forgotpwd/sendemail [post]
 func (this *UserController) SendEmailForgot() {
-	email := this.GetMushString("email", "邮箱不能为空")
-	if ok := models.FindUserByEmail(email); ok {
+	fmt.Println("werqwerewrqwerqwer")
+	logs.Info("werqwr")
+	uname := this.GetMushString("uname", "昵称不能为空")
+	pwd := this.GetMushString("pwd", "密码不能为空")
+	fmt.Println("00000",uname,pwd)
+	if ok := models.FindUserByUname(uname); ok {
 		this.JsonErr("用户不存在", 12002, "")
 	}
-	this.JsonErr("未开放:)请联系管理员更改密码", 9010, "")
+	//this.JsonErr("未开放:)请联系管理员更改密码", 9010, "")
+	md5pwd := tools.MD5(pwd)
+	if ok := models.UpdateUserPwdByUname(uname, md5pwd); !ok {
+		this.JsonErr("更新失败", 12003, "")
+	}
+	this.JsonOK("修改成功", "")
 }
 
 // @router /admin/permissions/add [get]

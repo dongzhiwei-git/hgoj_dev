@@ -1,30 +1,39 @@
-module github.com/yinrenxin/hgoj
+module hgoj
 
-go 1.13
+go 1.17
 
 require (
-	github.com/beego/beego/v2 v2.0.1-0.20201218012558-576435f0296e
-	github.com/flosch/pongo2 v0.0.0-20200913210552-0d938eb266f3 // indirect
-	github.com/garyburd/redigo v1.6.0
-	github.com/go-sql-driver/mysql v1.5.0
-	github.com/lib/pq v1.8.0 // indirect
-	github.com/magiconair/properties v1.8.4 // indirect
-	github.com/mattn/go-colorable v0.1.8 // indirect
-	github.com/mattn/go-runewidth v0.0.9 // indirect
+	github.com/astaxie/beego v1.12.3
+	github.com/beego/beego/v2 v2.0.1
+	github.com/garyburd/redigo v1.6.2
+	github.com/go-sql-driver/mysql v1.6.0
+	github.com/smartystreets/goconvey v1.6.6
+	github.com/yinrenxin/hgoj v0.0.0-20201228084453-b6aabed7d001
+)
+
+require (
+	github.com/beorn7/perks v1.0.1 // indirect
+	github.com/cespare/xxhash/v2 v2.1.1 // indirect
+	github.com/golang/protobuf v1.4.2 // indirect
+	github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1 // indirect
+	github.com/hashicorp/golang-lru v0.5.4 // indirect
+	github.com/jtolds/gls v4.20.0+incompatible // indirect
+	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
 	github.com/mitchellh/mapstructure v1.3.3 // indirect
-	github.com/pelletier/go-toml v1.8.1 // indirect
-	github.com/peterh/liner v1.2.0 // indirect
+	github.com/pkg/errors v0.9.1 // indirect
+	github.com/prometheus/client_golang v1.7.0 // indirect
+	github.com/prometheus/client_model v0.2.0 // indirect
+	github.com/prometheus/common v0.10.0 // indirect
+	github.com/prometheus/procfs v0.1.3 // indirect
 	github.com/shiena/ansicolor v0.0.0-20151119151921-a422bbe96644 // indirect
-	github.com/sirupsen/logrus v1.7.0 // indirect
-	github.com/smartystreets/goconvey v1.6.4
-	github.com/spf13/afero v1.4.1 // indirect
-	github.com/spf13/cast v1.3.1 // indirect
-	github.com/spf13/jwalterweatherman v1.1.0 // indirect
-	github.com/spf13/pflag v1.0.5 // indirect
-	github.com/spf13/viper v1.7.1 // indirect
-	go.starlark.net v0.0.0-20201111204707-3b0f582eefd1 // indirect
-	golang.org/x/arch v0.0.0-20201008161808-52c3e6f60cff // indirect
+	github.com/smartystreets/assertions v0.0.0-20180927180507-b2de0cb4f26d // indirect
+	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
+	golang.org/x/mod v0.3.0 // indirect
+	golang.org/x/net v0.0.0-20201021035429-f5854403a974 // indirect
 	golang.org/x/sys v0.0.0-20201112073958-5cba982894dd // indirect
 	golang.org/x/text v0.3.4 // indirect
-	gopkg.in/ini.v1 v1.62.0 // indirect
+	golang.org/x/tools v0.0.0-20201211185031-d93e913c1a58 // indirect
+	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
+	google.golang.org/protobuf v1.23.0 // indirect
+	gopkg.in/yaml.v2 v2.2.8 // indirect
 )
